@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HeFind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="img-container">
+            <img src="img/Logo.png" alt="логотип" class="logo">
+        </div>
+    </header>
+    <main>
+        <section id="home" class="centered-section">
+            <h2>Добро пожаловать на HeFind</h2>
+            <p></p>
+            
+            <!-- Форма регистрации -->
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="email">Почта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+
+            <!-- Сообщение после регистрации -->
+            <div id="welcomeMessage" class="welcome-message" style="display: none;">
+                <h3>Добро пожаловать!</h3>
+                <p>Теперь вы можете пользоваться всеми функциями нашего сервиса.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HeFind. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="js/registration.js"></script>
+</body>
+</html>

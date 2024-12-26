@@ -1,0 +1,244 @@
+/* Общие стили для всех страниц */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Стили для index.html */
+.centered-section {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.centered-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Добавляем адаптивную ширину */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+.form-group input:focus {
+    border-color: #44C389;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #44C389;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3aa876;
+}
+
+.welcome-message {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #44C389;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-message h3 {
+    margin-top: 0;
+}
+
+.welcome-message p {
+    margin-bottom: 0;
+}
+
+/* Увеличенный логотип */
+.logo {
+    max-width: 250px; /* Увеличиваем размер логотипа */
+    height: auto;
+    display: block;
+}
+
+/* Стили для info.html */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #44C389;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #44C389;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+section ul li {
+    margin-bottom: 10px; /* Отступ между элементами списка */
+    font-size: 1.1em; /* Размер текста */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px; /* Уменьшаем логотип на мобильных устройствах */
+    }
+
+    .centered-section h2 {
+        font-size: 2em;
+    }
+
+    .centered-section p {
+        font-size: 1em;
+    }
+
+    .registration-form {
+        padding: 15px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
